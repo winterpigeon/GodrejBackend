@@ -13,11 +13,6 @@ from fastapi import FastAPI
 import os
 from dotenv import load_dotenv
 load_dotenv()
-os.environ['HF_HOME'] = 'D:/my_transformers_cache'
-os.environ['TORCH_HOME'] = 'D:/my_torch_cache'
-os.environ['TORCH_HUB'] = 'D:/my_torch_cache2'
-os.environ['HUGGINGFACE_HUB_CACHE'] = 'D:/my_transformers_cache2'
-
 
 app = FastAPI()
 

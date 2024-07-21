@@ -39,6 +39,8 @@ class QueryRequest(BaseModel):
 @router.post("/uploadFile")
 async def create_upload_file(file: UploadFile):
 
+    print("recieved request")
+
     file_extension = file.filename.split(
         '.')[-1] if '.' in file.filename else 'tmp'
 

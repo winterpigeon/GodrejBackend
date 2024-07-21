@@ -120,7 +120,7 @@ def images_and_summarize(file_path, chroma_client):
         generated_ids = model.generate(
             input_ids=input_ids,
             pixel_values=pixel_values,
-            max_new_tokens=512,
+            max_new_tokens=1024,
             num_beams=3,
             do_sample=False
         )

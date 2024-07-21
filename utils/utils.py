@@ -52,7 +52,7 @@ def pptx_to_images(pptx_path, scale=0.5):
                                         scale) if run.font.size else 12
                         # Use DejaVuSans font for Unicode support
                         font = ImageFont.truetype(
-                            "D:\godrej hackathon\DejaVuSans-Bold.ttf", font_size)
+                            "../DejaVuSans-Bold.ttf", font_size)
                         draw.text((left, top), run.text,
                                   fill="black", font=font)
 

@@ -10,4 +10,4 @@ tail -f nohup.out
 
 ps aux | grep uvicorn
 
-kill -9 <pid>
+kill -9 pid
